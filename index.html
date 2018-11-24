@@ -14,6 +14,33 @@
 	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
 
+	<script type="text/javascript">
+		var params = {
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+};
+	</script>
 </head>
 <body>
 <div class="grid-container">
@@ -40,17 +67,18 @@
   	</div>
   	<div class="form_wrapper">
   		<form>
-  		<label>Where to go?</label><br>
+  		<label>Куда вы хотите отправиться?</label><br><br>
   		<input type="text" name="where"><br>
   		<br>
-  		<label>Where to go?</label><br>
+  		<label>Тип яхты</label><br><br>
   		<input type="text" name="where"><br>
   		<br>
 
   		<div class="calendar">
-  			<label>When to go?</label>
-  			<label>When to go?</label>
+  			<label>Дата отправления</label>
+  			<label>Дата возвращения</label>
   		</div>
+  		<br>
   		<div class="calendar">
 	  		<input class="date start" type="date" name="where">
 	  		<input class="date end" type="date" name="where">
@@ -77,14 +105,92 @@
   				</div>
   			</div>
   		</div>
+
+  		<!-- begin -->
+  		<div class="item_wrapper">
+  			<div class="item">
+  				<div class="content_wrapper">
+  					<div class="content">
+	  					<h5>Yacht breathe</h5>
+	  					<span>
+	  						Get it now
+	  					</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class="item_wrapper">
+  			<div class="item">
+  				<div class="content_wrapper">
+  					<div class="content">
+	  					<h5>Yacht breathe</h5>
+	  					<span>
+	  						Get it now
+	  					</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class="item_wrapper">
+  			<div class="item">
+  				<div class="content_wrapper">
+  					<div class="content">
+	  					<h5>Yacht breathe</h5>
+	  					<span>
+	  						Get it now
+	  					</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="item_wrapper">
+  			<div class="item">
+  				<div class="content_wrapper">
+  					<div class="content">
+	  					<h5>Yacht breathe</h5>
+	  					<span>
+	  						Get it now
+	  					</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="item_wrapper">
+  			<div class="item">
+  				<div class="content_wrapper">
+  					<div class="content">
+	  					<h5>Yacht breathe</h5>
+	  					<span>
+	  						Get it now
+	  					</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="item_wrapper">
+  			<div class="item">
+  				<div class="content_wrapper">
+  					<div class="content">
+	  					<h5>Yacht breathe</h5>
+	  					<span>
+	  						Get it now
+	  					</span>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+
+
+  		<!-- end -->
 	</div>
 
 	<script type="text/javascript" src="lib/slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		  $('.carousel').slick({
-				arrows: true
-    		});
+		  $('.carousel').slick(params);
 		});
 					
 	</script>
