@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+
 	<link rel="stylesheet" href="styles/main.css">
+
+
+	<!-- jquery --> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- carousel -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+
 </head>
 <body>
 <div class="grid-container">
@@ -12,15 +23,58 @@
   			<li>I'm</li>
   			<li>Your</li>
   			<li>Mind</li>
-  		</div>	
+  		</ul>
   		<span class="contact">
   			+380661295869
-  		</span>
+  		</span>	
   </div>
-  <div class="form"></div>
-  <div class="suggestion"></div>
-  <div class="reviews"></div>
-  <div class="footer"></div>
+  <div class="form">
+  	
+  </div>
+  <div class="suggestion">
+  	<span>Best choices</span>
+  	<div class="carousel">
+  		<div class="item">
+  			<img src="images/yacht1.jpg" />
+  		</div>
+
+  		<div class="item">
+  			<img src="images/yacht1.jpg" />
+  		</div>
+
+  		<div class="item">
+  			<img src="images/yacht1.jpg" />
+  		</div>
+	</div>
+
+	<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.carousel').slick({
+				arrows: true
+    		});
+		});
+					
+	</script>
+
+  </div>
+  <div class="reviews">
+  	
+  </div>
+  <div class="footer">
+		<span>
+  			+380661295869
+  			+380661295869
+  			+380661295869
+  		</span>	
+  		<img class="logo" src="images/logo_footer.png">
+  		<span>
+  			+380661295869
+  			+380661295869
+  			+380661295869
+  		</span>	
+
+  </div>
 </div>
 </body>
 </html>

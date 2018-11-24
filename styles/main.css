@@ -6,7 +6,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
   grid-template-areas: "header header header" ". form ." "suggestion suggestion suggestion" "reviews reviews reviews" "footer footer footer";
 }
 
@@ -14,20 +14,26 @@ body {
 .header { grid-area: header; 
 min-height: 96px;
 	background: url(../images/sea_search.jpg); 
-display: flex;}
+display: flex;
+padding: 16px}
 
 .header .logo {
-	padding: 16px;
 }
 
 .header .contact {
-	
-}
 
+  margin-left: auto;
+  align-self: flex-end;
+}
 
 .form { grid-area: form; }
 
-.suggestion { grid-area: suggestion; }
+.suggestion { 
+	grid-area: suggestion;
+	background: blue;
+	text-align: center;
+	padding: 8px;
+}
 
 .reviews { grid-area: reviews; }
 
@@ -38,7 +44,58 @@ display: flex;}
 	flex-wrap: nowrap;
 	text-decoration: none;
 	list-style-type: none;
-	padding: 4px;
 	justify-content: center;
+	margin: 0;
+    margin-left: auto;
+	padding: 0;
+    align-self: flex-end;
 	}
-.navigation li { padding: 12px; display: inline; }
+.navigation li {  display: inline; }
+
+
+
+/* form css */
+
+/*suggestions*/
+.carousel {
+	margin: 0 auto;
+	/*fucking arrows*/
+	width: calc(100% - 112px);
+}
+
+.carousel .item {
+	max-height: 214px;
+
+}
+
+.carousel .item img{
+	margin: 0 auto;
+	width: 142px;
+	height: 198px;
+}
+
+/* reviews */
+.reviews {
+	padding: 16px;
+}
+
+/* footer */
+.footer {
+	display: flex;
+    text-align: center;
+}
+
+.footer * {
+	flex-grow: 1;
+    flex-basis: 0;
+}
+
+.footer span {
+	white-space: pre-line; 
+}
+.footer .logo{
+	width: 96px;
+	max-width: 96px;
+	height: 96px;
+	max-height: 96px;
+}
