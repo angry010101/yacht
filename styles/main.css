@@ -1,0 +1,44 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header" ". form ." "suggestion suggestion suggestion" "reviews reviews reviews" "footer footer footer";
+}
+
+
+.header { grid-area: header; 
+min-height: 96px;
+	background: url(../images/sea_search.jpg); 
+display: flex;}
+
+.header .logo {
+	padding: 16px;
+}
+
+.header .contact {
+	
+}
+
+
+.form { grid-area: form; }
+
+.suggestion { grid-area: suggestion; }
+
+.reviews { grid-area: reviews; }
+
+.footer { grid-area: footer; }
+
+.navigation { 
+	flex-direction: row;
+	flex-wrap: nowrap;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 4px;
+	justify-content: center;
+	}
+.navigation li { padding: 12px; display: inline; }
