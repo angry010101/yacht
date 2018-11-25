@@ -1,0 +1,95 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 32px 1fr 2fr 32px;
+  /*grid-template-rows: 64px 2fr 2fr auto 96px;*/
+  grid-template-areas: "header header header header" ". . header_content ." ". content content ." "footer footer footer footer";
+}
+
+.header_content {
+	display: flex;
+	padding: 16px;
+	grid-area: header_content;
+}
+
+.header_content .count{
+	flex: 1;
+	margin-left: 12px;
+}
+
+
+.header_content .sort{
+	flex: 1;
+}
+
+.content {
+	margin: 16px;
+	display: flex;
+	grid-area: content;
+}
+
+/* Кирилл поправь тут шоб фильтры не расстягивались на всю ширину*/ 
+.content .filter{
+	height: 400px;
+	padding: 8px;
+	margin-right: 16px;
+	background: blue;
+	flex: 1;
+	color: white;
+}
+
+
+.content .filter input{
+	display: block;
+	width: 100%;
+	margin: 6px 0;
+
+}
+.content .results{
+	flex: 2;
+	align-content: center;
+}
+
+.content .results .item_wrapper{
+	background: white;
+	padding: 8px 16px;
+	height: 200px;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	margin-bottom: 32px;
+}
+
+.content .results .item_wrapper *{
+	margin: 0;
+	padding: 0;
+}
+
+.content .results .main{
+	flex: 1;
+	margin-right: 8px;
+}
+
+.content .results .description{
+	flex: 1;
+}
+
+.content .results .description .avaliable{
+	padding: 8px 0;
+}
+
+.content .results .item_wrapper h3{
+	padding: 8px 0;
+}
+
+.content .results .item_wrapper .main .img{
+	width: 90%;
+}
+
+.content .results .item_wrapper .description .details{
+	padding-top: 8px;
+	display: flex;
+}
+
+.content .results .item_wrapper .description .details *{
+	flex: 1;
+}

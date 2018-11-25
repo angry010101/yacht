@@ -62,7 +62,6 @@
 
 .reviews { grid-area: reviews; }
 
-.footer { grid-area: footer; }
 
 .navigation { 
   display: flex;
