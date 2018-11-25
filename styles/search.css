@@ -49,6 +49,10 @@
 	align-content: center;
 }
 
+.content .results .page_selector{
+	float: right;
+}
+
 .content .results .item_wrapper{
 	background: white;
 	padding: 8px 16px;
