@@ -1,0 +1,192 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 724px 1fr;
+  /*grid-template-rows: 64px 2fr 2fr auto 96px;*/
+  grid-template-areas: "header header header" "form form ." "suggestion suggestion suggestion" "reviews reviews reviews" "footer footer footer";
+}
+
+
+
+.form { grid-area: form;  }
+.form .text {
+  padding-top:32px;
+  flex: 2;
+  text-align: right;
+  padding-right: 62px;
+  margin-left: 28px;
+}
+.form .form_wrapper {
+  flex: 1;
+  padding: 32px;
+  background: #2b3454;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.form .calendar {
+  display: flex;
+}
+.form .calendar *{
+  flex: 1;
+}
+
+.form label{
+  padding-left: 0;
+  font-size: 14pt;
+}
+
+
+.form .form_wrapper input{
+  width: 100%;
+  color: black;
+}
+
+.form .submit{
+  margin: 8px auto;
+    display: block;
+    border: 3px solid white;
+    border-radius: 12px;
+    min-width: 102px;
+  padding: 8px;
+  color: black;
+}
+.form .form_wrapper .date{
+  flex: 1;
+}
+
+.form .form_wrapper .date .end{
+  float: right;
+}
+
+
+.reviews { grid-area: reviews; }
+
+.footer { grid-area: footer; }
+
+.navigation { 
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+    align-self: flex-end;
+    text-align: center;
+    flex: 3;
+    background: #3f506b;
+  }
+.navigation a {
+  display: inline;
+  flex-grow: 1;
+  padding: 8px;
+    flex-basis: 0;
+    color: white;
+   }
+
+.navigation a:hover{
+  background: black;
+}
+
+
+
+/* form css */
+
+.form {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  background: url(../images/sea_search.jpg);
+  background-size: cover;
+}
+/*suggestions*/
+
+.suggestion { 
+  grid-area: suggestion;
+  background: #2b3d63;
+  text-align: center;
+  padding: 12px;
+  color: white;
+    font-size: 24pt;
+}
+
+.carousel {
+  margin: 0 auto;
+  margin-top: 18px;
+  /*fucking arrows*/
+  width: calc(100% - 112px);
+}
+
+.carousel .item_wrapper{
+
+}
+
+.carousel .item_wrapper .item {
+  max-height: 302px;
+  width: 262px;
+  background: white;
+  margin: 0 auto;
+}
+
+.carousel .item .content_wrapper{
+  width: 242px;
+  height: 302px;
+  background: url(../images/yacht1.jpg);
+  background-size:cover;
+  margin: 0 auto;
+  display: flex;
+}
+
+.carousel .item .content_wrapper *{
+  align-self: flex-end;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel .item .content_wrapper h5{
+  color: white;
+  font-size: 16pt;
+}
+
+.carousel .item .content_wrapper span{
+  font-size: 14pt;
+}
+
+.carousel .item .content_wrapper .content{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+/* reviews */
+.reviews {
+  padding: 16px;
+  background: #d4d7e0;
+  display: flex;
+
+  align-items: center;
+    justify-content: center;
+}
+
+.reviews .review_wrapper{
+    padding: 48px;
+    flex: 1;
+    text-align: center;
+}
+
+.reviews .review_wrapper .text{
+  text-align: left;
+  padding: 6px
+}
+
+.reviews .review_wrapper .description{
+  display: flex;
+  justify-content: space-between;
+  margin: 6px;
+}
+.reviews .review_wrapper .description .author{
+
+}
+.reviews .review_wrapper .description .rate{
+    
+}
+
