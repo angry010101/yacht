@@ -1,27 +1,29 @@
-body {
+﻿body {
 	padding: 0;
 	margin: 0;
-	background: url(../images/sea_search.jpg);
-	background-size:cover;
+	font-size: 120%;
 }
 
 
 
-.header { grid-area: header; 
-min-height: 64px;
-	/*background: url(../images/sea_search.jpg); */
+.header { 
+  position: relative;
+  padding-right: 2%;
+  grid-area: header; 
+	background: url(../images/header_back.png);
 	background-size:cover;
-display: flex;
-box-shadow: 0 0 12px rgba(0,0,0,0.5);;
-padding: 16px;
-padding-bottom: 0}
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  box-shadow: 0 0 12px rgba(0,0,28,10);
+  padding-bottom: 0
+}
 
 .header .logo {
-	width: 92px;
-	height: 92px;
-
+	width: 22.5vmin;
 	position: absolute;
-    margin-top: 4px;
+  bottom: 5%;
+  margin-left: 30px;
 }
 
 .header .contact {
@@ -33,44 +35,14 @@ padding-bottom: 0}
   text-align: right;
 }
 
-
-
-/* footer */
-
-
-.footer { grid-area: footer; }
-
-.footer {
-  display: flex;
-    text-align: center;
-    background: url(../images/sea_footer.jpg);
-    background-size:cover;
-}
-
-.footer * {
-  flex-grow: 1;
-  color: white;
-    flex-basis: 0;
-    padding: 16px;
-}
-
-.footer span {
-  white-space: pre-line; 
-}
-.footer .logo{
-  width: 96px;
-  max-width: 96px;
-  height: 96px;
-  max-height: 96px;
-}
-
-
 .navigation { 
+  height: 50%;
   display: flex;
   flex-wrap: nowrap;
   text-decoration: none;
   list-style-type: none;
   justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
     align-self: flex-end;
@@ -78,6 +50,7 @@ padding-bottom: 0}
     flex: 3;
     background: #3f506b;
   }
+
 .navigation a {
   display: inline;
   flex-grow: 1;
@@ -89,3 +62,57 @@ padding-bottom: 0}
 .navigation a:hover{
   background: black;
 }
+
+
+/* footer */
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background: url(../images/sea_footer.jpg);
+  background-size:cover;
+}
+
+.footer * {
+/*  flex-grow: 1;*/
+  color: white;
+/*    flex-basis: 0;*/
+    padding: 16px;
+}
+
+.footer span {
+  white-space: pre-line; 
+}
+.footer .logo{
+  width: auto;
+}
+
+
+/*fonts and colors*/
+.poiret {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2em;
+}
+
+.blue_greenish {
+  color: rgb(0, 42, 61);
+}
+
+.montserrata {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 200;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.tenor {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 1em;
+}
+
